@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy birth day baimon</title>
+</head>
+<body>
+    <h1>Delverlop by Wen</h1>
+    <h2>please enter password</h2>
+    <input type="password" id="codeInput" placeholder="password">
+<button id="submitBtn" disabled>send</button>
+
+<p id="msg"></p>
+
+<script>
+  const correctCode = "140254";
+
+  const input = document.getElementById("codeInput");
+  const btn = document.getElementById("submitBtn");
+  const msg = document.getElementById("msg");
+
+  input.addEventListener("input", function() {
+    if (input.value === correctCode) {
+      btn.disabled = false;
+      msg.textContent = "✅ รหัสถูกต้อง";
+      msg.style.color = "green";
+    } else {
+      btn.disabled = true;
+      msg.textContent = "❌ รหัสไม่ถูก";
+      msg.style.color = "red";
+    }
+  });
+    btn.addEventListener("click", function() {
+    img.src="https://media.discordapp.net/attachments/1219140800068321282/1472384451626668074/IMG_1312.jpg?ex=69926060&is=69910ee0&hm=74b6036e331d0bb71c096103e04d9999847dc2fe97cc9f4aa191721e9bd2da06&=&format=webp&width=782&height=587"
+  });
+  btn.onclick = function() {
+    window.location.href = "file:///C:/Users/Admin/Desktop/HTML/index%20(2).html";
+  };
+</script>
+</body>
+</html>
